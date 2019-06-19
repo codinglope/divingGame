@@ -1,4 +1,4 @@
-class Fish {
+class Shark {
 
   constructor(x, y, size) {
     this.x = x;
@@ -17,8 +17,7 @@ class Fish {
 
     if (this.x < player1.x + 200 && this.x > player1.x) {
       if (this.y < player1.y + 50 && this.y > player1.y - 50) {
-        points+= 1;
-        document.getElementById("points").innerHTML = points+"points";
+        game.over();
 
       }
     }

@@ -1,10 +1,10 @@
 const game = new Game();
-const player1 = new Player(10, 0, 50);
+const player1 = new Player(10, 0, 100);
 let bg;
 let bg2;
 let x1 = 0;
 let x2 = 1000;
-let scrollSpeed = 2 ;
+let scrollSpeed = 0 ;
 const fish  = new Fish(1000,250, 30);
 const fish2 = new Fish(1000, 100, 10);
 const fish3 = new Fish(1000,300,20);
@@ -12,9 +12,12 @@ const fish4 = new Fish(1000,100, 25);
 // let diver;
 let song;
 let zierfisch;
+let shark = new Shark(1000, 100,90);
+let sharkimg;
+let points = 0;
 
  function preload() {
- song = loadSound("assets/salt.mp3.mp3");
+song = loadSound("assets/salt.mp3.mp3");
 }
 
 function setup() {
@@ -22,13 +25,14 @@ function setup() {
  
   song.loop();
   canvas.parent("canvas");
-  avatar = loadImage('assets/diver2.jpg');
+  
   bg = loadImage("assets/bg.jpg");
   bg2 = loadImage("assets/bg2.jpg");
   zierfisch = loadImage("assets/zierfisch.png");
-  diver = loadImage("assets/diver2.jpg");
+  diver = loadImage("assets/diver2.png");
+  sharkimg = loadImage("assets/shark.png")
 
-  x2 = innerWidth;
+ 
 }
 
 function draw() {
@@ -47,7 +51,12 @@ function draw() {
   fish3.move();
   fish4.draw();
   fish4.move();
-  
+  shark.draw();
+  shark.move();
+
+  setInterval(function() {
+    scrollSpeed+=0.001;
+  }, 3000)
 
 
 } 
@@ -60,7 +69,17 @@ function keyPressed() {
   }
  
   
-  clear();
-  player1.draw();
+  //clear();
+  //player1.draw();
   
+}
+
+function start(){
+
+  document.getElementById("canvas").style.display="block";
+  document.getElementById("points").style.display="block";
+  document.getElementById("gameover").style.display="none";
+  document.getElementById("intro").style.display="none";
+  document.getElementById("start-button").style.display="none";
+  scrollSpeed = 2;
 }

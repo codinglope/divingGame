@@ -1,4 +1,4 @@
-class Fish {
+class Shark {
 
   constructor(x, y, size) {
     this.x = x;
@@ -9,7 +9,7 @@ class Fish {
   }
 
   move() {
-    this.x -= this.size / 20 * scrollSpeed; //parallax
+    this.x -= this.size / 40 * scrollSpeed; //parallax
     if (this.x <= 0) {
       this.x = 1000;
       this.y = Math.floor(Math.random() * innerHeight);  
@@ -17,8 +17,7 @@ class Fish {
 
     if (this.x < player1.x + 200 && this.x > player1.x) {
       if (this.y < player1.y + 50 && this.y > player1.y - 50) {
-        points+= 1;
-        document.getElementById("points").innerHTML = points+"points";
+        game.over();
 
       }
     }
@@ -30,7 +29,7 @@ class Fish {
   draw() {
     // fill("turquoise");
     // rect(this.x, this.y, this.size,this.size);
-    image(zierfisch, this.x, this.y, this.size*2, this.size*2);
+    image(sharkimg, this.x, this.y, this.size*2, this.size);
   }
 
 }

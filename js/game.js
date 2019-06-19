@@ -1,6 +1,6 @@
 class Game {
 constructor(){
-  
+
 }
   // drawGrid() {
 
@@ -32,5 +32,12 @@ constructor(){
   if (x2 < - width){
     x2 = width;
   }
+  }
+
+  over() {
+    //alert("You idiot");
+    document.getElementById("canvas").style.display="none";
+    scrollSpeed = 0;
+   
   }
 }
