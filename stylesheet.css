@@ -35,15 +35,14 @@
 
 }
 
-
-
-#game-over {
-
-  font-size:2em;
+#h3{
+  font-size:1.5em;
   text-align:center;
-  text-transform: uppercase;
+  text-transform: uppercase ;
   line-height:2em;
-  color:white;
-  text-shadow:#020819 8px -20px 9px;
-
+  color:rgb(210, 247, 251);
+  text-shadow:#020819 8px -20px 9px; 
+  letter-spacing:0.5px;
 }
+
+

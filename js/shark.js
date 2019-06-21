@@ -15,10 +15,10 @@ class Shark {
       this.y = Math.floor(Math.random() * innerHeight);  
     }
 
-    if (this.x < player1.x + 200 && this.x > player1.x) {
+    if (this.x < player1.x + 100 && this.x > player1.x) {
       if (this.y < player1.y + 50 && this.y > player1.y - 50) {
         game.over();
-        game.gameOver=true;
+        game.gameOver= true;
 
       }
     }

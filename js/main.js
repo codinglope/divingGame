@@ -56,6 +56,8 @@ if(game.gameOver === false){
   setInterval(function() {
     scrollSpeed+=0.001;
   }, 5000)
+
+  
 }
 
   
@@ -83,3 +85,6 @@ function start(){
   document.getElementById("start-button").style.display="none";
   scrollSpeed = 2;
 }
+
+
+
