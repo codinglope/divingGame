@@ -83,6 +83,7 @@ function start(){
   document.getElementById("game-over").style.display="none";
   document.getElementById("intro").style.display="none";
   document.getElementById("start-button").style.display="none";
+  document.getElementById("h3").style.display="none";
   scrollSpeed = 2;
 }
 
