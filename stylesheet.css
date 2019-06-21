@@ -4,7 +4,46 @@
    background-size:cover;
    position:relative;
    repeat: no;
-   height:650px;
+   height:100vh;
    padding-top:50px;
  }
+#intro {
+
+  font-size:2em;
+  text-align:center;
+  text-transform: uppercase;
+  line-height:2em;
+  color:white;
+  text-shadow:#020819 8px -20px 9px;
+
+}
+
+#start-button {
+  background-color:rgb(8, 110, 243);
+  border: 2px solid rgba(10, 161, 248, 0.2);
+  color:white;
+  display:block; 
+  //font-family:'';
+  font-size:2em;
+  letter-spacing:0.5px;
+   margin: 40px auto 0 auto;
+  padding: 14px 20px 14px 20px;
+ 
+ // text-decoration:none;
+  width:400px;
+  
+
+}
+
+
+
+#game-over {
+
+  font-size:2em;
+  text-align:center;
+  text-transform: uppercase;
+  line-height:2em;
+  color:white;
+  text-shadow:#020819 8px -20px 9px;
+
 }

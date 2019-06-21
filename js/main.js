@@ -55,7 +55,7 @@ if(game.gameOver === false){
 
   setInterval(function() {
     scrollSpeed+=0.001;
-  }, 3000)
+  }, 5000)
 }
 
   
@@ -78,7 +78,7 @@ function start(){
 
   document.getElementById("canvas").style.display="block";
   document.getElementById("points").style.display="block";
-  document.getElementById("gameover").style.display="none";
+  document.getElementById("game-over").style.display="none";
   document.getElementById("intro").style.display="none";
   document.getElementById("start-button").style.display="none";
   scrollSpeed = 2;
