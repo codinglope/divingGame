@@ -1,15 +1,15 @@
 const game = new Game();
 const player1 = new Player(10, 0, 100);
-let bg;
-let bg2;
-let x1 = 0;
-let x2 = 1000;
-let scrollSpeed = 0 ;
+
 const fish  = new Fish(1000,250, 30);
 const fish2 = new Fish(1000, 100, 10);
 const fish3 = new Fish(1000,300,20);
 const fish4 = new Fish(1000,100, 25);
-// let diver;
+let bg;
+let bg2;
+let x1 = 0;
+let x2 = 1000;
+let scrollSpeed = 0;
 let song;
 let zierfisch;
 let shark = new Shark(1000, 100,90);
@@ -17,7 +17,7 @@ let sharkimg;
 let points = 0;
 
  function preload() {
-song = loadSound("assets/salt.mp3.mp3");
+song = loadSound("assets/intromusic.mp3");
 }
 
 function setup() {
@@ -36,8 +36,7 @@ function setup() {
 }
 
 function draw() {
-
-
+if(game.gameOver === false){
   var size = 50;
 
   game.background();
@@ -57,8 +56,9 @@ function draw() {
   setInterval(function() {
     scrollSpeed+=0.001;
   }, 3000)
+}
 
-
+  
 } 
 
 function keyPressed() {

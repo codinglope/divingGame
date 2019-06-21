@@ -1,0 +1,10 @@
+.wallpaper {
+
+   background-image:url(assets/diverintro.jpg);
+   background-size:cover;
+   position:relative;
+   repeat: no;
+   height:650px;
+   padding-top:50px;
+ }
+}

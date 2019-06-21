@@ -18,6 +18,7 @@ class Shark {
     if (this.x < player1.x + 200 && this.x > player1.x) {
       if (this.y < player1.y + 50 && this.y > player1.y - 50) {
         game.over();
+        game.gameOver=true;
 
       }
     }
