@@ -1,4 +1,4 @@
-class Fish {
+class Tropicalfish {
 
   constructor(x, y, size) {
     this.x = x;
@@ -30,7 +30,7 @@ class Fish {
   draw() {
     // fill("turquoise");
     // rect(this.x, this.y, this.size,this.size);
-    image(zierfisch, this.x, this.y, this.size*2, this.size*2);
+    image(tropicalfishimg, this.x, this.y, this.size*2, this.size*2);
   }
 
 }
